@@ -9,7 +9,7 @@ The `resourcenamer` Bicep module provides a standardized way to generate resourc
 To use the `resourcenamer` module in your Bicep deployment, reference it in your main Bicep file:
 
 ```bicep
-module resourcenamer 'modules/resourcenamer/namegenerator.bicep' = {
+module resourcenamer 'modules/resourcenamer/main.bicep' = {
   name: 'resourcenamer'
   params: {
     // Provide required parameters here
