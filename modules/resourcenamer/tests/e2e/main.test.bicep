@@ -1,8 +1,8 @@
 import { getResourceName } from './../../main.bicep'
 
 param location string = resourceGroup().location
-param environment string = 'prod'
-param workload string = 'arcservers'
+param environment string = 'dev'
+param workload string = 'mywebapp'
 
 param vnetName string = getResourceName('virtualNetwork', workload, environment, location, '001')
 
