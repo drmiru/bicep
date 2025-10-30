@@ -28,7 +28,7 @@ Describe the parameters required by the module. For example:
 | resourceType   | string   | The type of Azure resource.         |
 | environment    | string   | The deployment environment.         |
 
-*Update this table to match the actual parameters in `namegenerator.bicep`.*
+*Update this table to match the actual parameters in `main.bicep`.*
 
 ## Outputs
 
@@ -38,12 +38,12 @@ Describe the outputs provided by the module. For example:
 |----------------|----------|------------------------------------|
 | resourceName   | string   | The generated resource name.        |
 
-*Update this table to match the actual outputs in `namegenerator.bicep`.*
+*Update this table to match the actual outputs in `main.bicep`.*
 
 ## Example
 
 ```bicep
-module resourcenamer 'modules/resourcenamer/namegenerator.bicep' = {
+module resourcenamer 'modules/resourcenamer/main.bicep' = {
   name: 'resourcenamer'
   params: {
     prefix: 'myapp'
